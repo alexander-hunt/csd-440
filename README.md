@@ -11,12 +11,14 @@ Examples:
 
 - `http://localhost/csd-440/module-5/AlexanderCustomers.php`
 - `http://localhost/csd-440/module-6/AlexanderMyInteger.php`
+- `http://localhost/csd-440/module-7/AlexanderForm.php`
 
 To check PHP syntax from PowerShell, run:
 
 ```powershell
 & C:\xampp\php\php.exe -l .\module-5\AlexanderCustomers.php
 & C:\xampp\php\php.exe -l .\module-6\AlexanderMyInteger.php
+& C:\xampp\php\php.exe -l .\module-7\AlexanderForm.php
 ```
 
 ## Project Conventions
@@ -37,3 +39,4 @@ To check PHP syntax from PowerShell, run:
 | 4 | `module-4/AlexanderPalindrome.php` | Palindrome checking with visible test results |
 | 5 | `module-5/AlexanderCustomers.php` | Customer array and field-based record searches |
 | 6 | `module-6/AlexanderMyInteger.php` | `MyInteger` class, integer checks, getter, and setter |
+| 7 | `module-7/AlexanderForm.php` | Seven-field form with server-side validation and formatted results |
