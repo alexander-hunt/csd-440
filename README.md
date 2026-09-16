@@ -12,6 +12,16 @@ Examples:
 - `http://localhost/csd-440/module-5/AlexanderCustomers.php`
 - `http://localhost/csd-440/module-6/AlexanderMyInteger.php`
 - `http://localhost/csd-440/module-7/AlexanderForm.php`
+- `http://localhost/csd-440/module-8/AlexanderCreateTable.php`
+- `http://localhost/csd-440/module-8/AlexanderPopulateTable.php`
+- `http://localhost/csd-440/module-8/AlexanderQueryTable.php`
+
+Before using Module 8 for the first time, create the local database and student account. The script reads the MySQL root password from `MYSQL_ROOT_PASSWORD` and does not store it in the repository:
+
+```powershell
+& C:\Users\Alexa\AppData\Local\Python\pythoncore-3.14-64\python.exe .\module-8\scripts\setup-database.py
+& C:\Users\Alexa\AppData\Local\Python\pythoncore-3.14-64\python.exe .\module-8\scripts\print-tables.py
+```
 
 To check PHP syntax from PowerShell, run:
 
@@ -19,6 +29,10 @@ To check PHP syntax from PowerShell, run:
 & C:\xampp\php\php.exe -l .\module-5\AlexanderCustomers.php
 & C:\xampp\php\php.exe -l .\module-6\AlexanderMyInteger.php
 & C:\xampp\php\php.exe -l .\module-7\AlexanderForm.php
+& C:\xampp\php\php.exe -l .\module-8\AlexanderCreateTable.php
+& C:\xampp\php\php.exe -l .\module-8\AlexanderDropTable.php
+& C:\xampp\php\php.exe -l .\module-8\AlexanderPopulateTable.php
+& C:\xampp\php\php.exe -l .\module-8\AlexanderQueryTable.php
 ```
 
 ## Project Conventions
@@ -40,3 +54,9 @@ To check PHP syntax from PowerShell, run:
 | 5 | `module-5/AlexanderCustomers.php` | Customer array and field-based record searches |
 | 6 | `module-6/AlexanderMyInteger.php` | `MyInteger` class, integer checks, getter, and setter |
 | 7 | `module-7/AlexanderForm.php` | Seven-field form with server-side validation and formatted results |
+| 8 | `module-8/scripts/setup-database.py` | Re-runnable local MySQL database and student-account setup |
+| 8 | `module-8/scripts/print-tables.py` | Print all tables in the `baseball_01` database |
+| 8 | `module-8/AlexanderCreateTable.php` | Create the `book_collection` table |
+| 8 | `module-8/AlexanderDropTable.php` | Drop the `book_collection` table |
+| 8 | `module-8/AlexanderPopulateTable.php` | Populate five book collection records |
+| 8 | `module-8/AlexanderQueryTable.php` | Query and display book collection records |
