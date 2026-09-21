@@ -15,6 +15,9 @@ Examples:
 - `http://localhost/csd-440/module-8/AlexanderCreateTable.php`
 - `http://localhost/csd-440/module-8/AlexanderPopulateTable.php`
 - `http://localhost/csd-440/module-8/AlexanderQueryTable.php`
+- `http://localhost/csd-440/module-9/AlexanderIndex.php`
+- `http://localhost/csd-440/module-9/AlexanderQuery.php`
+- `http://localhost/csd-440/module-9/AlexanderForms.php`
 
 Before using Module 8 for the first time, create the local database and student account. The script reads the MySQL root password from `MYSQL_ROOT_PASSWORD` and does not store it in the repository:
 
@@ -33,6 +36,9 @@ To check PHP syntax from PowerShell, run:
 & C:\xampp\php\php.exe -l .\module-8\AlexanderDropTable.php
 & C:\xampp\php\php.exe -l .\module-8\AlexanderPopulateTable.php
 & C:\xampp\php\php.exe -l .\module-8\AlexanderQueryTable.php
+& C:\xampp\php\php.exe -l .\module-9\AlexanderIndex.php
+& C:\xampp\php\php.exe -l .\module-9\AlexanderQuery.php
+& C:\xampp\php\php.exe -l .\module-9\AlexanderForms.php
 ```
 
 ## Project Conventions
@@ -60,3 +66,6 @@ To check PHP syntax from PowerShell, run:
 | 8 | `module-8/AlexanderDropTable.php` | Drop the `book_collection` table |
 | 8 | `module-8/AlexanderPopulateTable.php` | Populate five book collection records |
 | 8 | `module-8/AlexanderQueryTable.php` | Query and display book collection records |
+| 9 | `module-9/AlexanderIndex.php` | Navigation page for Module 9 and copied Module 8 utilities |
+| 9 | `module-9/AlexanderQuery.php` | Search book records by title, author, or genre |
+| 9 | `module-9/AlexanderForms.php` | Add a validated book record with MySQLi |
