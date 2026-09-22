@@ -19,6 +19,7 @@ Examples:
 - `http://localhost/csd-440/module-9/AlexanderQuery.php`
 - `http://localhost/csd-440/module-9/AlexanderForms.php`
 - `http://localhost/csd-440/module-10/AlexanderJSON.php`
+- `http://localhost/csd-440/module-11/AlexanderPDF.php`
 
 Before using Module 8 for the first time, create the local database and student account. The script reads the MySQL root password from `MYSQL_ROOT_PASSWORD` and does not store it in the repository:
 
@@ -41,6 +42,7 @@ To check PHP syntax from PowerShell, run:
 & C:\xampp\php\php.exe -l .\module-9\AlexanderQuery.php
 & C:\xampp\php\php.exe -l .\module-9\AlexanderForms.php
 & C:\xampp\php\php.exe -l .\module-10\AlexanderJSON.php
+& C:\xampp\php\php.exe -l .\module-11\AlexanderPDF.php
 ```
 
 ## Project Conventions
@@ -72,3 +74,4 @@ To check PHP syntax from PowerShell, run:
 | 9 | `module-9/AlexanderQuery.php` | Search book records by title, author, or genre |
 | 9 | `module-9/AlexanderForms.php` | Add a validated book record with MySQLi |
 | 10 | `module-10/AlexanderJSON.php` | Eight-field book form with JSON output |
+| 11 | `module-11/AlexanderPDF.php` | PDF report of all book collection records |
